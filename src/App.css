@@ -14,8 +14,8 @@
 }
 
 .ce-active-chat-card {
-  background-color: #cabcdc !important;
-  border: 4px solid #cabcdc !important;
+  background-color: rgba(232, 170, 20,0.3) !important;
+  border: 4px solid rgba(232, 170, 20,0.2) !important;
   border-radius: 0px !important;
 }
 
@@ -34,7 +34,7 @@
 
 .ce-primary-button {
   border-radius: 6px !important;
-  background-color: #7554a0 !important;
+  background-color: #E8AA14 !important;
   position: relative;
   bottom: 1px;
 }
@@ -83,13 +83,13 @@
 }
 
 .chat-title {
-  color: #7554a0;
+  color: #E8AA14;
   font-weight: 800;
   font-size: 24px;
 }
 
 .chat-subtitle {
-  color: #7554a0;
+  color: #E8AA14;
   font-weight: 600;
   font-size: 12px;
   padding-top: 4px;
@@ -163,7 +163,7 @@
 .message-form {
   overflow: hidden;
   border-radius: 6px;
-  border: 1px solid #3b2a50;
+  border: 1px solid #e8aa14;
   background-color: white;
 }
 
@@ -217,7 +217,7 @@
   height: 100vh;
     width: 100%;
   background: rgb(117,84,160);
-  background: linear-gradient(90deg, rgba(117,84,160,1) 7%, rgba(117,84,160,1) 17%, rgba(106,95,168,1) 29%, rgba(99,103,174,1) 44%, rgba(87,116,184,1) 66%, rgba(70,135,198,1) 83%, rgba(44,163,219,1) 96%, rgba(22,188,237,1) 100%, rgba(0,212,255,1) 100%);  
+  background: linear-gradient(90deg, rgba(152,122,49,1) 0%, rgba(200,151,32,1) 50%, rgba(242,202,0,1) 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -289,7 +289,7 @@
 }
 
 .error {
-  color: white;
+  color: red;
   text-align: center;
   margin-top: 20px;
 }
