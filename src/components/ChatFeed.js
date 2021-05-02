@@ -9,6 +9,21 @@ const ChatFeed=(props)=> {
     const chatRoom =chats && chats[activeChat]
     console.log("chatRoom",chatRoom)
 
+    const renderReadReceipts=(message,isMymessage)=>{
+        chatRoom.people.map((person,index)=>{
+            if(person.last_read===message.id)
+            return
+                <div 
+                    key={`read_${index}`}
+                    className="read-receipt"
+                    style={{
+                        float:isMymessage?'right':'left',
+                        backgroundImage:`url(${person?.person?.avatar})`
+                    }}
+                />
+                }
+            )
+    }
     const renderMessages=()=>{
         const keys=Object.keys(messages)
         return keys.map((key,index)=>{
@@ -27,7 +42,7 @@ const ChatFeed=(props)=> {
                         }
                     </div>
                     <div className="read-receipts" style={{marginRight: isMymessage ?'18px':'0px',marginLeft:isMymessage ?'0':'68px'}}>
-                        read-receipts
+                        {renderReadReceipts(message,isMymessage)}
                     </div>
                 </div>
             )
